@@ -2,69 +2,39 @@
 <html>
     <head>
 
-            <link rel="stylesheet" href="./style.css">
-        <style type="text/css">
-            
-            p {
-                font-weight: bold;
-                font-style: italic;
-                font-size: 150%;
-                color: white;
-            }
+        <title>Poems</title>
+        <link rel="stylesheet" href="./style.css">
+       
 
-            body{
-                
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-            }
-
-            #btn{
-                background-color:lightblue;
-                padding: .5em;
-                border-radius: 6px;
-                color: #fff;
-                font-size: 20px;               
-                border: none;
-            }
-
-            #btn:hover {
-                border: none;
-                background:red;
-                box-shadow: 0px 0px 1px #777;
-            }
-                     
-
-        </style>
-
-        <!--Here is the Javascript that contains a function named randomizedQuote.
-            There is also an array called quotes, which contain the 5 favorite quotes from the movie called "The Wood"-->
+        <!--Here is the Javascript that contains a function named randomizedPoem.
+            There is also an array called poems, which contains top 6 favorite poems."-->
         <script type="text/javascript">
-            var quotes = ["<p>If I Fail<br><br>If in my quest 2 achieve my goals <br> I stumble or crumble and lose my soul <br> Those that knew me would easily co-sign <br> There was never a life as hard as mine <br>No father - no money - no chance and no guide<br> I only follow my voice inside<br>If it guides me wrong and I do not win<br>I'll learn from mistakes and try 2 achieve again.<br><br> - Tupac Shakur</p>",
-            "<p>The Rose That Grew From Concrete <br><br>Did you hear about the rose that grew<br>from a crack in the concrete? <br>Proving nature's law is wrong it <br>learned to walk with out having feet. <br>Funny it seems, but by keeping it's dreams, <br>it learned to breathe fresh air. <br>Long live the rose that grew from concrete<br>when no one else ever cared.<br><br> - Tupac Shakur </p>",
-            "<p>Dreams<br><br>Hold fast to dreams <br>For if dreams die<br>Life is a broken-winged bird<br>That cannot fly.<br><br>Hold fast to dreams<br>For when dreams go<br>Life is a barren field<br>Frozen with snow.<br><br> - Langston Hughes</p>",
-            "<p>A Dream Deferred<br><br>What happens to a dream deferred?<br><br>Does it dry up<br>like a raisin in the sun?<br>Or fester like a sore--<br>And then run?<br>Does it stink like rotten meat?<br>Or crust and sugar over--<br>like a syrupy sweet?<br><br>Maybe it just sags<br>like a heavy load.<br><br>Or does it explode?<br><br>- Langston Hughes</p>",
-            "<p>Invictus<br><br>Out of the night that covers me, <br>Black as the pit from pole to pole, <br>I thank whatever gods may be <br>For my unconquerable soul.<br><br>In the fell clutch of circumstance <br>I have not winced nor cried aloud. <br>Under the bludgeonings of chance <br> My head is bloody, but unbowed.<br><br>Beyond this place of wrath and tears <br>Looms but the Horror of the shade, <br>And yet the menace of the years <br>Finds and shall find me unafraid.<br><br>It matters not how strait the gate, <br>How charged with punishments the scroll, <br>I am the master of my fate, <br>I am the captain of my soul.<br><br> - William Ernest Henley</p>",
-            "<p>Untitled<br><br>Lord,<br>when you send the rain<br>think about it, please,<br>a little?<br><br>Do<br>not get carried away<br>by the sound of falling water,<br>the marvelous light<br>on the falling water.<br><br>  I<br>am beneath that water.<br>It falls with great force<br>and the light<br><br>Blinds<br>me to the light<br><br> - James Baldwin</p>"
+            var poems = ["<p class='poemPar'>If I Fail<br><br>If in my quest 2 achieve my goals <br> I stumble or crumble and lose my soul <br> Those that knew me would easily co-sign <br> There was never a life as hard as mine <br>No father - no money - no chance and no guide<br> I only follow my voice inside<br>If it guides me wrong and I do not win<br>I'll learn from mistakes and try 2 achieve again.<br><br> - Tupac Shakur</p>",
+            "<p class='poemPar'>The Rose That Grew From Concrete <br><br>Did you hear about the rose that grew<br>from a crack in the concrete? <br>Proving nature's law is wrong it <br>learned to walk with out having feet. <br>Funny it seems, but by keeping it's dreams, <br>it learned to breathe fresh air. <br>Long live the rose that grew from concrete<br>when no one else ever cared.<br><br> - Tupac Shakur </p>",
+            "<p class='poemPar'>Dreams<br><br>Hold fast to dreams <br>For if dreams die<br>Life is a broken-winged bird<br>That cannot fly.<br><br>Hold fast to dreams<br>For when dreams go<br>Life is a barren field<br>Frozen with snow.<br><br> - Langston Hughes</p>",
+            "<p class='poemPar'>A Dream Deferred<br><br>What happens to a dream deferred?<br><br>Does it dry up<br>like a raisin in the sun?<br>Or fester like a sore--<br>And then run?<br>Does it stink like rotten meat?<br>Or crust and sugar over--<br>like a syrupy sweet?<br><br>Maybe it just sags<br>like a heavy load.<br><br>Or does it explode?<br><br>- Langston Hughes</p>",
+            "<p class='poemPar'>Invictus<br><br>Out of the night that covers me, <br>Black as the pit from pole to pole, <br>I thank whatever gods may be <br>For my unconquerable soul.<br><br>In the fell clutch of circumstance <br>I have not winced nor cried aloud. <br>Under the bludgeonings of chance <br> My head is bloody, but unbowed.<br><br>Beyond this place of wrath and tears <br>Looms but the Horror of the shade, <br>And yet the menace of the years <br>Finds and shall find me unafraid.<br><br>It matters not how strait the gate, <br>How charged with punishments the scroll, <br>I am the master of my fate, <br>I am the captain of my soul.<br><br> - William Ernest Henley</p>",
+            "<p class='poemPar'>Untitled<br><br>Lord,<br>when you send the rain<br>think about it, please,<br>a little?<br><br>Do<br>not get carried away<br>by the sound of falling water,<br>the marvelous light<br>on the falling water.<br><br>  I<br>am beneath that water.<br>It falls with great force<br>and the light<br><br>Blinds<br>me to the light<br><br> - James Baldwin</p>"
             ]
            
-           /*This function takes the use out of Math.floor and Math.random() in order to generate the quotes at random times.
-            document.getElementByID is used to get the quotes to print onto the body.*/
-            function randomizedQuote(){
-                var random = Math.floor(Math.random() * (quotes.length));
-                document.getElementById("click").innerHTML = quotes[random];
+           /*This function takes the use out of Math.floor and Math.random() in order to generate the poems at random times.
+            document.getElementByID is used to get the poems to print onto the body.*/
+            function randomizedPoem(){
+                var random = Math.floor(Math.random() * (poems.length));
+                document.getElementById("click").innerHTML = poems[random];
             }
         
         </script>
     </head>
-    <body background="images/image3.jpg">
+    <body background="images/image3.jpg" class="poemBody">
                
 
-        <p align="center"><a href="index.html" style="color:blue;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click the below button to pull up the various poems I love to read!</p>
-        <p align="center"><button onclick="randomizedQuote()" id="btn">Randomized Poems</button></p>
+        <p align="center" class="poemPar"><a href="index.html" style="color:blue;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click the below button to pull up the various poems I love to read!</p>
+        <p align="center" class="poemPar"><button onclick="randomizedPoem()" id="btn">Randomized Poems</button></p>
         
         
         <div id="click"style="text-align:center ">
-            <!--This is where the quotes will be printed onto.-->
+            <!--This is where the poems will be printed onto.-->
         </div>
         
 

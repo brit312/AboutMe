@@ -1,49 +1,49 @@
-let sliderImages = document.querySelectorAll(".slide"),
-arrowLeft = document.querySelector("#arrow-left"),
-arrowRight = document.querySelector("#arrow-right"),
+let slideImg = document.querySelectorAll(".slide"),
+left = document.querySelector("#arrowL"),
+right = document.querySelector("#arrowR"),
 current = 0;
 
-// Clear all images
+// This functon is to clear the images.
 function reset() {
-for (let i = 0; i < sliderImages.length; i++) {
-  sliderImages[i].style.display = "none";
+for (let i = 0; i < slideImg.length; i++) {
+  slideImg[i].style.display = "none";
 }
 }
 
-// Init slider
+// This function will start the slide show.
 function startSlide() {
 reset();
-sliderImages[0].style.display = "block";
+slideImg[0].style.display = "block";
 }
 
-// Show prev
-function slideLeft() {
+// This function will provide the previous slide.
+function prevSlide() {
 reset();
-sliderImages[current - 1].style.display = "block";
+slideImg[current - 1].style.display = "block";
 current--;
 }
 
-// Show next
-function slideRight() {
+// This function will provide the next slide.
+function nextSlide() {
 reset();
-sliderImages[current + 1].style.display = "block";
+slideImg[current + 1].style.display = "block";
 current++;
 }
 
-// Left arrow click
-arrowLeft.addEventListener("click", function() {
+// This function will control the left arrow.
+left.addEventListener("click", function() {
 if (current === 0) {
-  current = sliderImages.length;
+  current = slideImg.length;
 }
-slideLeft();
+prevSlide();
 });
 
-// Right arrow click
-arrowRight.addEventListener("click", function() {
-if (current === sliderImages.length - 1) {
+// This function will control the right arrow.
+right.addEventListener("click", function() {
+if (current === slideImg.length - 1) {
   current = -1;
 }
-slideRight();
+nextSlide();
 });
 
 startSlide();
