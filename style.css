@@ -1,0 +1,115 @@
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a:hover{font-weight: bold; text-decoration: underline;}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("images/image1.jpg");
+}
+.slide2 {
+  background-image: url("images/image3.png");
+}
+.slide3 {
+  background-image: url("images/image2.png");
+}
+.slide4 {
+  background-image: url("images/image4.png");
+}
+.slide5 {
+  background-image: url("images/image5.png");
+}
+.slide6 {
+  background-image: url("images/image2.jpg");
+}
+.slide7 {
+  background-image: url("images/image1.png");
+}
+.slide8 {
+  background-image: url("images/image6.png");
+}
+.slide9 {
+  background-image: url("images/image7.png");
+}
+.slide10 {
+  background-image: url("images/image8.png");
+}
+.slide11 {
+  background-image: url("images/image9.png");
+}
+.slide12 {
+  background-image: url("images/image10.png");
+}
+
+.slide-content {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content h2 {
+  
+  color: #fff;
+  
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent black transparent transparent;
+  left: 0;
+  margin-left: 550px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent black;
+  right: 0;
+  margin-right: 550px;
+}
+
+
+
+    
+    
+    a.special:hover{font-weight: bold; text-decoration: underline;}
+    .ballstate_image {position:absolute; center:20px; right: 350px; z-index: 1;}
+    #title{font-style: italic}
+    ol {font-weight: normal; font-style: italic;}
+    ul{font-weight: bold; font-style:normal;}
+    .style{font-weight: bold;}
+
+body {
+    background-size: cover;
+}
+
+    
