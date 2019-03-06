@@ -1,2 +1,2 @@
 # AboutMe
-Here is a little all about me!
+Learn All About ME!
